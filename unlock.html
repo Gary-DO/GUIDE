@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unlock-music</title>
+</head>
+<body>
+    <details>
+        <summary>点击展开/收起内容</summary>
+        <p>这是第一段内容。</p>
+        <p>这是第二段内容。</p>
+    </details>
+      
+    <button onclick="toggleText()">显示/隐藏文字</button>
+    <p class="hiddenText">这是需要显示或隐藏的文字。</p>
+
+    
+
+    <p style="font-size: 2em;" class="hiddenText">
+        <a href="https://demo.unlock-music.dev/" title="wangyijiesuo" target="_blank">网易解锁(please use clash)</a>
+    </p>
+    <p style="font-size: 2em;" class="hiddenText">
+        <a href="https://convertio.co/zh/download/7955935018d13e3215fe4280fded4f667e9a7e/" title="全能" target="_blank">啥都行</a>
+    </p>
+
+    <!-- <script>
+        function toggleText() {
+            var text = document.getElementById("hiddenText2"||"hiddenText2"||"hiddenText3");
+            if (text.style.display === "none") {
+                text.style.display = "block"; // 显示文本
+            } else {
+                text.style.display = "none"; // 隐藏文本
+            }
+        }
+    </script> -->
+
+    <script>
+        function toggleText() {
+            var texts = document.querySelectorAll(".hiddenText"); // 选中所有带 class="hiddenText" 的元素
+            texts.forEach(function(text) {
+                if (text.style.display === "none" || text.style.display === "") {
+                    text.style.display = "block"; // 显示所有文本
+                } else {
+                    text.style.display = "none"; // 隐藏所有文本
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
+
+
