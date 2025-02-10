@@ -1,0 +1,109 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.bisque{
+    color: bisque;
+}
+b{
+    color:rgb(17, 38, 229);
+    background-color: rgb(199, 249, 252);
+    text-align: left;
+    font-size: 1em;
+    margin: 0;
+}
+pre{
+    color:green;
+    background-color: rgb(199, 249, 252);
+    text-align: left;
+    font-size: 1.5em;
+    margin: 0;
+    /* border: 0; */
+    /* padding: 0; */
+}
+a{
+    text-decoration: none;
+    color: rgb(134, 58, 248);
+}
+/* div{font-family:consolas,Arial,sans-serif}*/
+h1{
+    background-color: rgb(199, 249, 252);
+    color:burlywood;
+    margin: 0;
+    /* border: 0; */
+    /* padding: 0; */
+}
+#block-test{
+    color: aqua;
+    box-sizing: border-box;
+    height: 90px;
+    width: 236px;
+    text-align: center;
+    background: blueviolet;
+    /* margin: 2; */
+    border: 3px solid red;
+    padding-top: 15px;
+    /* padding: 6; */
+    /* position: ; */
+}
+
+/* 让4个按钮在同一行，每个占25%宽度 */
+.container {
+    margin: 0;
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: repeat(4, 1fr); /* 4等分 */
+    width: 100vw;
+    /* max-width: 800px; */
+}
+.dropdown {
+    text-align: center;
+    background: rgb(199, 249, 252);
+    /* border: 1px solid #ccc; */
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+/* 默认隐藏下拉内容，展开后占满100% */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 83.6px; /* 控制展开内容的位置 */
+    left: 50%; /* 先让左边对齐到中点 */
+    transform: translateX(-50%); /* 再往左移动自身50%的宽度，达到居中 */
+    width: 100%;
+    background:  rgb(199, 249, 252);
+    border: 1px solid  rgb(199, 249, 252);
+    /* padding: 20px; */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+/* .dropdown {
+    border: 1px solid #ccc;
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.dropdown-header {
+    background: rgb(199, 249, 252);
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.dropdown-content {
+    display: none;  
+    padding: 10px;
+    background: rgb(199, 249, 252);
+} */
